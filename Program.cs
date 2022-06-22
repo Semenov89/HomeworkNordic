@@ -9,35 +9,43 @@ namespace Chess
             // константа, задающая размер поля
             const int size = 8;
 
-            // формирование поля
-            for (int i = 1; i <=size; i++)
+            // формирование поля двойного размера
+            for (int f = 0; f < size/2; f++)
             {
-                for (int j = 1; j <=size/2; j++)
+                for (int i = 1; i <=2; i++)
                 {
-                    if (i % 2 == 1)
+                    for (int j = 1; j <=size/2; j++)
                     {
+
                         Console.BackgroundColor = ConsoleColor.White;
-                        Console.Write("  ");
+                        Console.Write("    ");
                         Console.BackgroundColor = ConsoleColor.Black;
-                        Console.Write("  ");
+                        Console.Write("    ");
+
                     }
-                    else
-                    {
-                        Console.BackgroundColor = ConsoleColor.Black;
-                        Console.Write("  ");
-                        Console.BackgroundColor = ConsoleColor.White;
-                        Console.Write("  ");
-                    }
+
+                    Console.WriteLine();
+
                 }
-                Console.WriteLine();
+                for (int i = 1; i <=2; i++)
+                {
+                    for (int j = 1; j <=size/2; j++)
+                    {
 
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        Console.Write("    ");
+                        Console.BackgroundColor = ConsoleColor.White;
+                        Console.Write("    ");
+
+                    }
+                    Console.WriteLine();
+                }
             }
-
-
-
+            
             Console.ReadKey();
         }
     }
+    
 }
 
 

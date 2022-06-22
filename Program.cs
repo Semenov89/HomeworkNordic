@@ -14,8 +14,7 @@ namespace Chess
             ConsoleColor saveColor = Console.BackgroundColor;
 
             //Формирование буквинной подписи сверху
-            Console.Write($"");
-            char c = 'A';
+             char c = 'A';
             for (int i = 0; i < size; i++)
             {
                 Console.Write($" {c++,3}");

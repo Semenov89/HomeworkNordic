@@ -7,7 +7,7 @@ namespace Chess
         static void Main(string[] args)
         {
             // константа, задающая размер поля
-            int size = 8;
+            const int size = 8;
 
             // формирование поля
             for (int i = 1; i <=size; i++)
@@ -32,6 +32,8 @@ namespace Chess
                 Console.WriteLine();
 
             }
+
+
 
             Console.ReadKey();
         }
